@@ -1,0 +1,28 @@
+
+html {
+  max-height: 100vh;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+body {
+  background: var(--bg-secondary);
+  height: 100%;
+  overflow: hidden;
+  *,
+  *:after,
+  *:before {
+  }
+}
