@@ -2,6 +2,7 @@ import "./assets/styles/reset.scss"
 import "./assets/styles/global.scss"
 import {useEffect} from "react";
 import ExampleOfProblems from "./features/ExampleOfProblems/ExampleOfProblems.tsx";
+import WelcomeScreen from "./features/WelcomeScreen/WelcomeScreen.tsx";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <div className={"app"}>
+      <WelcomeScreen/>
       <ExampleOfProblems/>
     </div>
   )
