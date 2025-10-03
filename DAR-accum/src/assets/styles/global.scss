@@ -1,3 +1,5 @@
+@import "dark_theme";
+@import "light_theme";
 
 html {
   max-height: 100vh;
@@ -25,4 +27,50 @@ body {
   *:after,
   *:before {
   }
+}
+
+.theme_transition,
+.theme_transition * {
+  transition: 250ms !important;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+aside,
+main {
+  height: 100vh;
+}
+
+:root {
+  @each $name, $color in $light-theme {
+    --#{$name}: #{$color};
+  }
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    @each $name, $color in $dark-theme {
+      --#{$name}: #{$color};
+    }
+    color-scheme: dark;
+  }
+}
+:root[color-scheme="light"] {
+  @each $name, $color in $light-theme {
+    --#{$name}: #{$color};
+  }
+  color-scheme: light;
+}
+:root[color-scheme="dark"] {
+  @each $name, $color in $dark-theme {
+    --#{$name}: #{$color};
+  }
+  color-scheme: dark;
+}
+
+.react-resizable {
+  position: relative;
 }
