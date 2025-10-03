@@ -8,6 +8,17 @@ html {
 
 #root {
   height: 100%;
+  width: 100%;
+}
+
+.app{
+  background-color: var(--primary-bg);
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
 }
 
 *,
@@ -15,7 +26,7 @@ html {
 *:before {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Onest', sans-serif;
   outline: none;
 }
 
