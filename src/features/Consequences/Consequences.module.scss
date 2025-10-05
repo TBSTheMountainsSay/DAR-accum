@@ -5,6 +5,7 @@
   max-width: 1170px;
   margin: 0 auto;
   flex-direction: column;
+  width: 100%;
 
   .bricksWrapper{
     display: flex;
@@ -22,6 +23,7 @@
 @media (max-width: 1170px){
   .wrapper{
     margin: 0 10px;
+    width: unset;
 
     .bricksWrapper{
       .bricks{

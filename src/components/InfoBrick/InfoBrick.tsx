@@ -1,21 +1,29 @@
 import styles from "./InfoBrick.module.scss"
 import SvgSelector from "../../assets/SvgSelector.tsx";
-import React from "react";
+import clsx from "clsx";
 
 interface InfoBrickProps {
     children: React.ReactNode
+    title?: string
     iconName?: string
 }
 
-const InfoBrick = ({ children, iconName }: InfoBrickProps) => {
+const InfoBrick = ({children, title = null, iconName}: InfoBrickProps) => {
     return (
-        <div className={styles.wrapper}>
-            {iconName && (
-                <h2 className={styles.iconWrapper}>
-                    <SvgSelector className={styles.icon} id={iconName || 'placeholder'} />
-                </h2>
-            )}
-            <h1 className={styles.title}>
+        <div className={clsx(styles.wrapper, {[styles.wrapperWithTitle]: !!title})}>
+            <div className={styles.wrapperHeader}>
+                {iconName && (
+                    <div className={styles.iconWrapper}>
+                        <SvgSelector className={styles.icon} id={iconName || 'placeholder'}/>
+                    </div>
+                )}
+                {title && (
+                    <h2 className={styles.title}>
+                        {title}
+                    </h2>
+                )}
+            </div>
+            <h1 className={styles.text}>
                 {children}
             </h1>
         </div>

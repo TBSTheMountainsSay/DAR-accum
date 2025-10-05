@@ -6,19 +6,34 @@
   border-radius: 24px;
   max-width: 550px;
 
-  .title{
-    font-size: 16px;
-    color: var(--secondary);
-    font-weight: 600;
-  }
+  .wrapperHeader{
+    display: flex;
+    gap: 12px;
 
-  .iconWrapper{
-    .icon{
-      width: 20px;
-      height: 20px;
-      fill: var(--secondary);
+    .title{
+      font-size: 20px;
+      color: var(--secondary);
+      font-weight: 8600;
+    }
+
+    .iconWrapper{
+      .icon{
+        width: 20px;
+        height: 20px;
+        fill: var(--secondary);
+      }
     }
   }
+
+  .text{
+    font-size: 18px;
+    color: var(--primary);
+    font-weight: 800;
+  }
+}
+
+.wrapperWithTitle{
+  flex-direction: column;
 }
 
 @media (max-width: 1140px){

@@ -2,7 +2,6 @@ import styles from "./ExampleOfProblems.module.scss"
 import CustomTitle from "../../components/CustomTitle/CustomTitle.tsx";
 import InfoBrick from "../../components/InfoBrick/InfoBrick.tsx";
 
-
 const ExampleOfProblems = () => {
     return (
         <div className={styles.wrapper}>
