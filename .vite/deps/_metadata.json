@@ -1,0 +1,46 @@
+{
+  "hash": "efbb1d28",
+  "configHash": "49595b5f",
+  "lockfileHash": "da4f19d5",
+  "browserHash": "0f210431",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "a5d230a1",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "a694fc24",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "7c90f9ca",
+      "needsInterop": true
+    },
+    "react-compare-image": {
+      "src": "../../node_modules/react-compare-image/dist/ReactCompareImage.mjs",
+      "file": "react-compare-image.js",
+      "fileHash": "33b3f429",
+      "needsInterop": false
+    },
+    "clsx": {
+      "src": "../../node_modules/clsx/dist/clsx.mjs",
+      "file": "clsx.js",
+      "fileHash": "16e6f1f8",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-UNLUE3XC": {
+      "file": "chunk-UNLUE3XC.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
+    }
+  }
+}
