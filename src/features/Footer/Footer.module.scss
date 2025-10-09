@@ -1,0 +1,48 @@
+.wrapper{
+  width: 100%;
+  background-color: var(--secondary-bg);
+
+  .content{
+    padding: 30px;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .image{
+      height: 75px;
+      width: 75px;
+    }
+
+    .contacts{
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}
+
+@media (max-width: 520px){
+  .wrapper{
+    .content{
+      .image{
+        height: 45px;
+        width: 45px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .wrapper{
+    .content{
+      padding: 30px 5px;
+      justify-content: center;
+
+      .image{
+        height: 0;
+        width: 0;
+      }
+    }
+  }
+}
