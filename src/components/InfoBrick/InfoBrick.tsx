@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 interface InfoBrickProps {
     children: React.ReactNode
-    title?: string
+    title?: string | null
     iconName?: string
 }
 
@@ -14,7 +14,7 @@ const InfoBrick = ({children, title = null, iconName}: InfoBrickProps) => {
             <div className={styles.wrapperHeader}>
                 {iconName && (
                     <div className={styles.iconWrapper}>
-                        <SvgSelector className={styles.icon} id={iconName || 'placeholder'}/>
+                        <SvgSelector className={styles.icon} id={iconName as any || 'placeholder'}/>
                     </div>
                 )}
                 {title && (
