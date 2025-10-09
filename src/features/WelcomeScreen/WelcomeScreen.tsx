@@ -1,16 +1,12 @@
 import styles from "./WelcomeScreen.module.scss"
 import logo from "../../assets/images/logo.png"
 import CustomTitle from "../../components/CustomTitle/CustomTitle.tsx";
-import {useState} from "react";
 
 const WelcomeScreen = () => {
-    const [copied, setCopied] = useState<string | null>(null);
 
     const handleCopy = async (text: string) => {
         try {
             await navigator.clipboard.writeText(text)
-            setCopied(text)
-            setTimeout(() => setCopied(null), 2000)
         } catch (err) {
             console.error("Ошибка копирования:", err)
         }
