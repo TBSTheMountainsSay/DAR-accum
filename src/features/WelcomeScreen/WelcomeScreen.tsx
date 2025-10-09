@@ -1,9 +1,10 @@
 import styles from "./WelcomeScreen.module.scss"
+import logo from "../../assets/images/logo.png"
 
 const WelcomeScreen = () => {
     return (
         <div className={styles.wrapper}>
-            <img src={'src/assets/png/logo.png'} alt={"Logo"} className={styles.image}/>
+            <img src={logo as string} alt={"Logo"} className={styles.image}/>
             <div className={styles.mainTitleWrapper}>
                 <div>
                     ДОМ

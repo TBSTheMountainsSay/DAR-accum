@@ -5,6 +5,7 @@ import ExampleOfProblems from "./features/ExampleOfProblems/ExampleOfProblems.ts
 import WelcomeScreen from "./features/WelcomeScreen/WelcomeScreen.tsx";
 import About from "./features/About/About.tsx";
 import Consequences from "./features/Consequences/Consequences.tsx";
+import BeforeAfter from "./features/BeforeAfter/BeforeAfter.tsx";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <About/>
       <ExampleOfProblems/>
         <Consequences/>
+        <BeforeAfter/>
     </div>
   )
 }
