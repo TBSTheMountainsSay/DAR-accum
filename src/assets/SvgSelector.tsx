@@ -77,4 +77,5 @@ const SvgSelector: React.FC<SvgSelectorProps> = ({id, className, style}) => {
     return svgMap[id]
 }
 
+
 export default SvgSelector
