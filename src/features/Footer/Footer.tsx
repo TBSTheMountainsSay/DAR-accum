@@ -19,7 +19,10 @@ const Footer = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.content}>
-                <img src={logo as string} alt={"Logo"} className={styles.image}/>
+                <div className={styles.logoWrapper}>
+                    <img src={logo as string} alt={"Logo"} className={styles.image}/>
+                    <CustomTitle text={"С уважением к Вам и Вашему делу!"} type={"title"}/>
+                </div>
                 <div className={styles.contacts}>
                     <CustomTitle text={"И.П. Домрачева Диана Сергеевна"} type={"text"}/>
                     <CustomTitle text={"Город-Герой Волгоград: 8 (982) 884-51-21"} type={"text"} onClick={() => handleCopy("8 (982) 884-51-21")}/>
