@@ -17,7 +17,7 @@ const Footer = () => {
             <div className={styles.content}>
                 <div className={styles.logoWrapper}>
                     <img src={logo as string} alt={"Logo"} className={styles.image}/>
-                    <CustomTitle text={"С уважением к Вам и Вашему делу!"} type={"title"}/>
+                    <CustomTitle text={"С уважением к Вам и Вашему делу!"} type={"text"}/>
                 </div>
                 <div className={styles.contacts}>
                     <CustomTitle text={"И.П. Домрачева Диана Сергеевна"} type={"text"}/>
