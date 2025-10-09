@@ -1,5 +1,5 @@
-@import "dark_theme";
-@import "light_theme";
+@use "light_theme" as *;
+@use "dark_theme" as *;
 
 html {
   max-height: 100vh;
