@@ -42,7 +42,7 @@ const Footer = () => {
                     <img src={logo as string} alt={"Logo"} className={styles.image}/>
                     <CustomTitle text={"С уважением к Вам и Вашему делу!"} type={"text"}/>
                 </div>
-                <CustomTitle text={"© 2023-2025 ИП Домрачева Д.С. | Компания «ДАР»"} type={"text"}/>
+                <CustomTitle text={"© 2024-2025 ИП Домрачева Д.С. | Компания «ДАР»"} type={"text"}/>
             </div>
         </div>
     );
