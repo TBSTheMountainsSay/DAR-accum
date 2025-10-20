@@ -5,6 +5,10 @@ import beforeImg from "../../assets/images/before.jpg"
 import afterImg from "../../assets/images/after.jpg"
 import beforeImg2 from "../../assets/images/before2.jpg"
 import afterImg2 from "../../assets/images/after2.jpg"
+import beforeImg3 from "../../assets/images/before3.jpg"
+import afterImg3 from "../../assets/images/after3.jpg"
+import beforeImg4 from "../../assets/images/before4.jpg"
+import afterImg4 from "../../assets/images/after4.jpg"
 import InfoBrick from "../../components/InfoBrick/InfoBrick.tsx";
 import clsx from "clsx";
 
@@ -32,6 +36,22 @@ const BeforeAfter = () => {
                         мирового стандарта С5.Электрическая цепь полностью восстановлена и функционирует в допустимом
                         диапазоне напряжений.
                     </InfoBrick>
+                </div>
+            </div>
+            <div className={styles.compareImgWrapper}>
+                <div className={styles.compareImgWide}>
+                    <ReactCompareImage
+                        leftImage={beforeImg3 as string}
+                        rightImage={afterImg3 as string}
+                        sliderLineWidth={3}
+                    />
+                </div>
+                <div className={styles.compareImgWide}>
+                    <ReactCompareImage
+                        leftImage={beforeImg4 as string}
+                        rightImage={afterImg4 as string}
+                        sliderLineWidth={3}
+                    />
                 </div>
             </div>
             <div className={clsx(styles.compareImgWrapper, styles.revert)}>

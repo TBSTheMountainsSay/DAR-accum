@@ -18,6 +18,10 @@
       width: 400px;
     }
 
+    .compareImgWide{
+      width: 450px;
+    }
+
     .infoBlocks{
       display: flex;
       flex-direction: column;
@@ -51,6 +55,10 @@
   .wrapper {
     .compareImgWrapper{
       .compareImg{
+        width: 350px;
+      }
+
+      .compareImgWide{
         width: 350px;
       }
     }
