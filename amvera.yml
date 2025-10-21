@@ -5,10 +5,9 @@ meta:
     version: 18
 
 build:
-  command: npm install && npm run build
-  outputDir: dist
-
+  additionalCommands: npm install && npm run build
 run:
-  command: serve
-  args: -s dist -l 3000
+  scriptName: ""
+  scriptArguments: serve -s dist -l 3000
+  command: npx serve -s dist -l 3000
   containerPort: 3000
