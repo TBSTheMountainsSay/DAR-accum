@@ -1,5 +1,4 @@
 import styles from "./Footer.module.scss"
-import logo from "../../assets/images/logo.png";
 import CustomTitle from "../../components/CustomTitle/CustomTitle.tsx";
 
 const Footer = () => {
@@ -39,7 +38,7 @@ const Footer = () => {
             </div>
             <div className={styles.copyright}>
                 <div className={styles.logoWrapper}>
-                    <img src={logo as string} alt={"Logo"} className={styles.image}/>
+                    <img src={"/images/logo.png"} alt={"Logo"} className={styles.image}/>
                     <CustomTitle text={"С уважением к Вам и Вашему делу!"} type={"text"}/>
                 </div>
                 <CustomTitle text={"© 2024-2025 ИП Домрачева Д.С. | Компания «ДАР»"} type={"text"}/>
