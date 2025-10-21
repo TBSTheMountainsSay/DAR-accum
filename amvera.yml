@@ -5,5 +5,5 @@ meta:
     version: 18
 
 build:
-  command: npm install && npm run build
+  command: npm ci && npm run build
   outputDir: dist
