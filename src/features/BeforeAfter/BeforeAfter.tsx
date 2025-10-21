@@ -1,6 +1,14 @@
 import styles from "./BeforeAfter.module.scss"
 import CustomTitle from "../../components/CustomTitle/CustomTitle.tsx";
 import ReactCompareImage from "react-compare-image";
+import beforeImg from "../../assets/images/before.jpg"
+import afterImg from "../../assets/images/after.jpg"
+import beforeImg2 from "../../assets/images/before2.jpg"
+import afterImg2 from "../../assets/images/after2.jpg"
+import beforeImg3 from "../../assets/images/before3.jpg"
+import afterImg3 from "../../assets/images/after3.jpg"
+import beforeImg4 from "../../assets/images/before4.jpg"
+import afterImg4 from "../../assets/images/after4.jpg"
 import InfoBrick from "../../components/InfoBrick/InfoBrick.tsx";
 import clsx from "clsx";
 
@@ -11,8 +19,8 @@ const BeforeAfter = () => {
             <div className={styles.compareImgWrapper}>
                 <div className={styles.compareImg}>
                     <ReactCompareImage
-                        leftImage={"/images/before.jpg"}
-                        rightImage={"/images/after.jpg"}
+                        leftImage={beforeImg as string}
+                        rightImage={afterImg as string}
                         sliderLineWidth={3}
                     />
                 </div>
@@ -33,15 +41,15 @@ const BeforeAfter = () => {
             <div className={styles.compareImgWrapper}>
                 <div className={styles.compareImgWide}>
                     <ReactCompareImage
-                        leftImage={"/images/before3.jpg"}
-                        rightImage={"/images/after3.jpg"}
+                        leftImage={beforeImg3 as string}
+                        rightImage={afterImg3 as string}
                         sliderLineWidth={3}
                     />
                 </div>
                 <div className={styles.compareImgWide}>
                     <ReactCompareImage
-                        leftImage={"/images/before4.jpg"}
-                        rightImage={"/images/after4.jpg"}
+                        leftImage={beforeImg4 as string}
+                        rightImage={afterImg4 as string}
                         sliderLineWidth={3}
                     />
                 </div>
@@ -60,8 +68,8 @@ const BeforeAfter = () => {
                 </div>
                 <div className={styles.compareImg}>
                     <ReactCompareImage
-                        leftImage={"/images/before2.jpg"}
-                        rightImage={"/images/after2.jpg"}
+                        leftImage={beforeImg2 as string}
+                        rightImage={afterImg2 as string}
                         sliderLineWidth={3}
                     />
                 </div>

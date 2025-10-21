@@ -1,4 +1,5 @@
 import styles from "./WelcomeScreen.module.scss"
+import logo from "../../assets/images/logo.png"
 import CustomTitle from "../../components/CustomTitle/CustomTitle.tsx";
 
 const WelcomeScreen = () => {
@@ -19,7 +20,7 @@ const WelcomeScreen = () => {
                 <CustomTitle text={"DAR_ServisAKB@mail.ru"} type={"text"} onClick={() => handleCopy("DAR_ServisAKB@mail.ru")}/>
             </div>
             <div className={styles.content}>
-                <img src={"/images/logo.png"} alt={"Logo"} className={styles.image}/>
+                <img src={logo as string} alt={"Logo"} className={styles.image}/>
                 <div className={styles.mainTitleWrapper}>
                     <div>
                         ДОМ
