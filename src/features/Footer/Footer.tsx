@@ -1,5 +1,5 @@
 import styles from "./Footer.module.scss"
-import logo from "../../assets/images/logo.png";
+import logo from "src/assets/images/logo.png";
 import CustomTitle from "../../components/CustomTitle/CustomTitle.tsx";
 
 const Footer = () => {

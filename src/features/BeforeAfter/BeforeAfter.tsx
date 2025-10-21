@@ -1,15 +1,15 @@
 import styles from "./BeforeAfter.module.scss"
 import CustomTitle from "../../components/CustomTitle/CustomTitle.tsx";
 import ReactCompareImage from "react-compare-image";
-import beforeImg from "../../assets/images/before.jpg"
-import afterImg from "../../assets/images/after.jpg"
-import beforeImg2 from "../../assets/images/before2.jpg"
-import afterImg2 from "../../assets/images/after2.jpg"
-import beforeImg3 from "../../assets/images/before3.jpg"
-import afterImg3 from "../../assets/images/after3.jpg"
-import beforeImg4 from "../../assets/images/before4.jpg"
-import afterImg4 from "../../assets/images/after4.jpg"
-import InfoBrick from "../../components/InfoBrick/InfoBrick.tsx";
+import beforeImg from "src/assets/images/before.jpg"
+import afterImg from "src/assets/images/after.jpg"
+import beforeImg2 from "src/assets/images/before2.jpg"
+import afterImg2 from "src/assets/images/after2.jpg"
+import beforeImg3 from "src/assets/images/before3.jpg"
+import afterImg3 from "src/assets/images/after3.jpg"
+import beforeImg4 from "src/assets/images/before4.jpg"
+import afterImg4 from "src/assets/images/after4.jpg"
+import InfoBrick from "src/components/InfoBrick/InfoBrick.tsx";
 import clsx from "clsx";
 
 const BeforeAfter = () => {
