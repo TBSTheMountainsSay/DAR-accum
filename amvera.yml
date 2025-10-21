@@ -5,5 +5,10 @@ meta:
     version: 18
 
 build:
-  command: npm ci && npm run build
+  command: npm install && npm run build
   outputDir: dist
+
+run:
+  command: serve
+  args: -s dist -l 3000
+  containerPort: 3000
