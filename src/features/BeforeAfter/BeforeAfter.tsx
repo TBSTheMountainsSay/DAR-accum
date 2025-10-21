@@ -9,7 +9,7 @@ import beforeImg3 from "src/assets/images/before3.jpg"
 import afterImg3 from "src/assets/images/after3.jpg"
 import beforeImg4 from "src/assets/images/before4.jpg"
 import afterImg4 from "src/assets/images/after4.jpg"
-import InfoBrick from "src/components/InfoBrick/InfoBrick.tsx";
+import InfoBrick from "../../components/InfoBrick/InfoBrick.tsx";
 import clsx from "clsx";
 
 const BeforeAfter = () => {
