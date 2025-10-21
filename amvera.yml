@@ -1,5 +1,9 @@
 meta:
   environment: node
   toolchain:
-    name: browser
+    name: node
     version: 18
+
+build:
+  command: npm install && npm run build
+  outputDir: dist
