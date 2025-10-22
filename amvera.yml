@@ -5,8 +5,12 @@ meta:
     version: 18
 
 build:
-  additionalCommands: npm install -g npm@11.6.2 && npm ci && npm run build && ls -la dist
+  additionalCommands: |
+    npm install -g npm@11.6.2
+    npm ci
+    npm run build
+    ls -la dist
 
 run:
-  command: npx serve -s dist -l $PORT
+  command: npm start
   containerPort: 0
