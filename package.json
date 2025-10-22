@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "npx serve -s dist -l $PORT"
+    "start": "npx serve -s dist -l ${PORT:-3000}"
   },
   "dependencies": {
     "clsx": "^2.1.1",
