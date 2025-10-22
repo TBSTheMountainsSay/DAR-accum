@@ -8,5 +8,5 @@ build:
   additionalCommands: npm ci && npm run build
 
 run:
-  command: npx serve -s dist -l 3000
-  containerPort: 3000
+  command: npm run preview
+  containerPort: 4173

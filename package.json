@@ -8,10 +8,10 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "serve -s dist -l 3000"
+    "start": "serve -s dist -l 3000",
+    "preview": "vite preview --port 4173"
   },
   "dependencies": {
     "clsx": "^2.1.1",
