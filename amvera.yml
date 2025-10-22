@@ -5,7 +5,8 @@ meta:
     version: 18
 
 build:
-  additionalCommands: npm install && npm run build
+  additionalCommands: npm ci && npm run build
+
 run:
-  command: npm start
+  command: npx serve -s dist -l 3000
   containerPort: 3000
