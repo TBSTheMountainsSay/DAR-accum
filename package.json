@@ -10,8 +10,8 @@
     "lint": "eslint .",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "serve -s dist -l 3000",
-    "preview": "vite preview --port 4173"
+    "start": "serve -s dist",
+    "preview": "vite preview"
   },
   "dependencies": {
     "clsx": "^2.1.1",
