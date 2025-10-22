@@ -7,5 +7,5 @@ meta:
 build:
   additionalCommands: npm install && npm run build
 run:
-  command: npx serve -s dist -l 3000
+  command: npm start
   containerPort: 3000
